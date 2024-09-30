@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(233, 210, 240);
+}
+
+.app h1 {
+  margin: 1vmin 0;
+}
+
+.callendar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 210mm;
+  height: 297mm;
+}
+
+.month-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 30%;
+  margin: 1vmin;
+}
+
+.month-name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: rgb(192, 142, 207);
+  padding: 1vmin;
+  font-weight: bolder;
+}
+
+.week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: rgb(229, 221, 209);
+  font-weight: bolder;
+}
+
+.week-days div {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vmin;
+}
+
+.month-days div {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  direction: ltr;
+}
+
+.month-days div div {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vmin;
+}
+
+.hidden {
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+.holiday {
+  background-color: rgb(227, 162, 248);
+}
+
+/* rgb(233, 182, 248) */
