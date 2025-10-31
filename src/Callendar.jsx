@@ -1,12 +1,12 @@
-import Month from './Components/Month';
+import Month from "./Components/Month";
 
-import { months } from './data/months';
+import { months } from "./data/months";
 
 const Callendar = () => {
   return (
-    <div className='app'>
-      <h1>اليومية المدرسية 2025/2024</h1>
-      <div className='callendar'>
+    <div className="app">
+      <h1>اليومية المدرسية 2026/2025</h1>
+      <div className="callendar">
         {months.map((month) => (
           <Month
             key={month.name}
