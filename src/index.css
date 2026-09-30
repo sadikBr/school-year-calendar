@@ -246,9 +246,8 @@ select {
 
 .legend i,
 .event-row > i {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
+    width: 15px;
+    height: 15px;
     flex: 0 0 auto;
 }
 
@@ -372,9 +371,8 @@ i.activity {
 }
 
 .event-dots i {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
+    width: 6px;
+    height: 6px;
 }
 
 .agenda {
@@ -410,9 +408,8 @@ i.activity {
 }
 
 .print-legend i {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
+    width: 15px;
+    height: 15px;
 }
 
 .event-list {
@@ -424,16 +421,12 @@ i.activity {
 .event-row {
     display: grid;
     grid-template-columns: 12px 118px 1fr;
-    align-items: start;
+    align-items: center;
     gap: 10px;
     border-top: 1px solid #e7e2d8;
     padding: 10px 0;
     font-size: 0.74rem;
     break-inside: avoid;
-}
-
-.event-row > i {
-    margin-top: 5px;
 }
 
 .event-row time {
